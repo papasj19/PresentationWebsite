@@ -4,7 +4,7 @@
 <template>
   <section class="landing-page">
     <div class="content">
-      <h1 class="title"> <img class="plane" src="/src/assets/plane.png"  alt="plane"/> Thanks for dropping by! <img class="plane" src="/src/assets/plane2.png"  alt="plane2"/></h1>
+      <h1 class="title"> Thanks for dropping by! <img class="plane" src="/src/assets/plane2.png"  alt="plane2"/></h1>
       <h2 class="subtitle">
         Check out what my friends and I have been up to recently at
         <a href="https://www.studiogatogalactico.com" target="_blank" rel="noopener noreferrer">
@@ -45,7 +45,7 @@
 }
 
 .content {
-  max-width: 800px;
+  width: 100%;
   animation: fadeIn 1.2s ease-in-out;
 }
 
