@@ -17,11 +17,11 @@ function checkPassword() {
 <template>
   <main class="viewer">
     <!-- Password prompt -->
-    <div v-if="!unlocked" class="login">
+    <form v-if="!unlocked" class="login">
       <h2>Enter password to view slides</h2>
       <input v-model="input" type="password" placeholder="Password" />
       <button @click="checkPassword">Unlock</button>
-    </div>
+    </form>
 
     <!-- PDF only shows if unlocked -->
     <div v-else class="pdf-wrap">
@@ -40,6 +40,10 @@ function checkPassword() {
 </template>
 
 <style scoped>
+h2{
+  color: darkslategray;
+}
+
 .viewer {
   min-height: 100vh;
   display: flex;
@@ -51,7 +55,7 @@ function checkPassword() {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  background: #fafafa;
+  background: skyblue;
   padding: 2rem;
   border-radius: 12px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
@@ -64,8 +68,8 @@ function checkPassword() {
   padding: 0.5rem 1rem;
   border: none;
   border-radius: 8px;
-  background: #007bff;
-  color: white;
+  background: antiquewhite;
+  color: darkslategray;
   cursor: pointer;
 }
 .pdf-wrap {
