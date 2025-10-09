@@ -7,8 +7,7 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-/protected/*
-/protected/
+
 
 node_modules
 .DS_Store
