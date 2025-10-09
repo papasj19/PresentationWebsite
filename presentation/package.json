@@ -17,6 +17,7 @@
     "vue-router": "^4.5.1"
   },
   "devDependencies": {
+    "@cloudflare/workers-types": "^4.20251008.0",
     "@vitejs/plugin-vue": "^6.0.1",
     "vite": "^7.0.6",
     "vite-plugin-vue-devtools": "^8.0.0"
